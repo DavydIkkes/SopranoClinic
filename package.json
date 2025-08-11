@@ -1,0 +1,39 @@
+{
+  "name": "soprano",
+  "version": "0.1.0",
+  "description": "second page for training",
+  "keywords": [
+    "training"
+  ],
+  "homepage": "https://github.com/DavydIkkes/SopranoClinic#readme",
+  "bugs": {
+    "url": "https://github.com/DavydIkkes/SopranoClinic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavydIkkes/SopranoClinic.git"
+  },
+  "license": "ISC",
+  "author": "Davyd",
+  "type": "commonjs",
+  "main": "gulpfile.js",
+  "buildPath": "../SopranoClinic/",
+  "scripts": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.0",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-load-plugins": "^2.0.8",
+    "gulp-notify": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-strip-comments": "^2.6.0",
+    "sass": "^1.90.0"
+  }
+}
