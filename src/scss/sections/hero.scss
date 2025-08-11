@@ -1,0 +1,46 @@
+.hero {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 8%;
+
+    &__heading {
+        // height: 200px;
+        width: 100%;
+
+    }
+
+    &__title {
+        font-family: 'Philosopher';
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin: 0 auto;
+
+        &-orange {
+            color: var(--color-orange);
+        }
+
+        &-image {
+            width: 25vw;
+            object-fit: cover;
+            object-position: 0% 10%;
+            border-radius: 30px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: blueviolet;
+
+        &-info {
+            width: 50%;
+        }
+
+        &-picture {
+            width: 50%;
+        }
+    }
+}
