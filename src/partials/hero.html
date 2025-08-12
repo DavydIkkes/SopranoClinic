@@ -1,18 +1,31 @@
 <section class="hero">
   <div class="contact">
-    <a class="contact__phone" href="tel:+380967555100">
+    <a
+      tabindex="0"
+      class="contact__phone"
+      href="tel:+380967555100"
+      rel="nofollow noreferrer"
+      aria-label="Телефон клініки Soprano"
+    >
       +38 096 755 51 00
     </a>
   </div>
 
   <div class="heading">
-    <h1 class="hero__title heading__title">
-
+    <h1 class="hero__title">
       <span class="heading__line">
         Комплексний
         <picture class="heading__image">
-          <source srcset="./static/img/smile.avif" type="image/avif" />
-          <source srcset="./static/img/smile.webp" type="image/webp" />
+          <source
+            srcset="./static/img/smile.avif"
+            sizes="(max-width: 300px) 200px"
+            type="image/avif"
+          />
+          <source
+            srcset="./static/img/smile.webp"
+            sizes="(max-width: 300px) 200px"
+            type="image/webp"
+          />
           <img
             class="hero__image heading__image-smile"
             src="./static/img/smile.jpg"
@@ -23,11 +36,19 @@
           />
         </picture>
       </span>
-      
+
       <span class="heading__line">
         <picture class="heading__image">
-          <source srcset="./static/img/dental.avif" type="image/avif" />
-          <source srcset="./static/img/dental.webp" type="image/webp" />
+          <source
+            srcset="./static/img/dental.avif"
+            sizes="(max-width: 500px) 200px"
+            type="image/avif"
+          />
+          <source
+            srcset="./static/img/dental.webp"
+            sizes="(max-width: 500px) 200px"
+            type="image/webp"
+          />
           <img
             class="hero__image heading__image-dental"
             src="./static/img/dental.jpg"
@@ -39,13 +60,12 @@
         </picture>
         Чек-Ап
       </span>
-
     </h1>
   </div>
 
   <div class="content">
     <div class="content__block content__block-info">
-      <h2 class="hero__title hero__content-title">
+      <h2 class="hero__title">
         У клініці <span class="hero__title-orange">soprano</span>
       </h2>
 
@@ -54,28 +74,44 @@
           Глибока діагностика, прозорий план лікування та повне розуміння стану
           вашого здоров’я — все в одному візиті.
         </p>
-        <a href="/SopranoClinic/">
+        <a
+          href="/SopranoClinic/"
+          rel="home"
+          aria-label="Головна сторінка клініки Soprano"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             class="content__button-arrow"
           >
             <path
-              fill="currentColor"
               d="M12.884 5.116a1.253 1.253 0 0 0-1.768 0l-5 5a1.25 1.25 0 0 0 1.768 1.768l2.866-2.866V18a1.25 1.25 0 1 0 2.5 0V9.018l2.866 2.866a1.25 1.25 0 1 0 1.768-1.768z"
             />
           </svg>
         </a>
       </div>
 
-      <a class="content__button" href="/SopranoClinic/">
+      <a
+        class="content__button"
+        href="/SopranoClinic/"
+        rel="home"
+        aria-label="Головна сторінка клініки Soprano"
+      >
         Записатись на чек-ап
       </a>
     </div>
     <div class="content__block">
       <picture>
-        <source srcset="./static/img/woman.avif" type="image/avif" />
-        <source srcset="./static/img/woman.webp" type="image/webp" />
+        <source
+          srcset="./static/img/woman.avif"
+          sizes="(max-width: 600px) 500px"
+          type="image/avif"
+        />
+        <source
+          srcset="./static/img/woman.webp"
+          sizes="(max-width: 600px) 500px"
+          type="image/webp"
+        />
         <img
           class="hero__image content__image"
           src="./static/img/woman.jpg"
