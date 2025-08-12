@@ -1,0 +1,139 @@
+.hero {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 8%;
+  gap: 2vw;
+
+  &__image {
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  &__title {
+    font-family: "Philosopher";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin: 0;
+
+    &-orange {
+      color: var(--color-orange);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    margin-top: 1vw;
+
+    &-phone {
+      font-family: "UbuntuSans";
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--color-white);
+      text-decoration: none;
+    }
+  }
+
+  &__heading {
+    &-line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2.5vw;
+    }
+
+    &-title {
+      font-size: 95px;
+    }
+
+    &-image {
+      display: flex;
+      align-items: center;
+    }
+
+    &-image-smile {
+      width: 25vw;
+      height: 7vw;
+      object-position: 0 30%;
+    }
+
+    &-image-dental {
+      width: 35vw;
+      height: 8vw;
+      object-position: 0 95%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-title {
+      font-size: 53px;
+    }
+
+    &-text {
+      font-family: "UbuntuSans";
+      font-weight: 500;
+      font-size: 20px;
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+    }
+
+    &-button-arrow {
+      background-color: white;
+      color: black;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transform: rotate(135deg);
+
+      &:hover {
+        background-color: var(--color-orange);
+        color: var(--color-white);
+      }
+    }
+
+    &-button {
+      display: block;
+      width: 326px;
+      text-decoration: none;
+      height: 50px;
+      background-color: var(--color-orange);
+      color: var(--color-white);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: "Unbounded";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      line-height: 50px;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-black);
+      }
+    }
+
+    &-block {
+      width: 45%;
+    }
+
+    &-image {
+      width: 35vw;
+      height: 20vw;
+    }
+  }
+}
