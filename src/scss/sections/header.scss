@@ -1,11 +1,12 @@
 .header {
     display: flex;
-    margin: 2vw 10%;  
+    padding: 2vw 0;
+    margin: 0 8%;  
 
     &__text {
         font-family: "UbuntuSans";
         font-weight: 500;
-        font-size: 20px;
+        font-size: 15px;
         color: var(--color-white);
         line-height: 100%;
     }
