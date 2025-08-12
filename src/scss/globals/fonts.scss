@@ -18,3 +18,9 @@
     src: url(../static/fonts/PhilosopherBold.woff2) format('woff2');
     font-style: normal;
 }
+
+:root {
+    --font-ubuntu-sans: 'UbuntuSans', sans-serif;
+    --font-unbounded: 'Unbounded', cursive;
+    --font-philosopher: 'Philosopher', serif;
+}

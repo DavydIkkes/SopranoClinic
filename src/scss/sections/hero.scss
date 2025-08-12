@@ -11,7 +11,7 @@
   }
 
   &__title {
-    font-family: "Philosopher";
+    font-family: var(--font-philosopher);
     font-weight: 700;
     text-transform: uppercase;
     color: var(--color-white);
@@ -28,7 +28,7 @@
   margin-top: 1vw;
 
   &__phone {
-    font-family: "UbuntuSans";
+    font-family: var(--font-ubuntu-sans);
     font-weight: 500;
     font-size: 18px;
     color: var(--color-white);
@@ -103,7 +103,7 @@
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-family: "Unbounded";
+    font-family: var(--font-unbounded);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -115,8 +115,8 @@
     }
 
     &-arrow {
-      background-color: white;
-      color: black;
+      background-color: var(--color-white);
+      color: var(--color-black);
       width: 40px;
       height: 40px;
       border-radius: 50%;
