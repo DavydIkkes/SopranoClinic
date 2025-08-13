@@ -1,9 +1,11 @@
+%section_padding {
+  padding: 0 10vw;
+}
+
 .hero {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
-  margin: 0 8%;
-  gap: 2vw;
 
   &__image {
     object-fit: cover;
@@ -24,73 +26,107 @@
 }
 
 .contact {
+  @extend %section_padding;
+
   display: flex;
-  margin-top: 1vw;
+  align-items: center;
+
+  height: 4vw;
 
   &__phone {
     font-family: var(--font-ubuntu-sans);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1rem;
     color: var(--color-white);
     text-decoration: none;
+
+    @media (min-width: 370px) {
+      font-size: 0.6rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 0.9rem;
+    }
   }
 }
 
 .heading {
+  @extend %section_padding;
+
   & .hero__title {
-    font-size: 95px;
+    font-size: 6rem;
+
+    @media (min-width: 370px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 6rem;
+    }
   }
 
   &__line {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     align-items: center;
     gap: 2.5vw;
+    line-height: 1.2;
   }
 
   &__image {
     display: flex;
 
     &-smile {
-      width: 25vw;
-      height: 7vw;
+      max-width: 100%;
+      width: 30vw;
+      height: 6vw;
       object-position: 0 30%;
     }
     &-dental {
-      width: 35vw;
-      height: 8vw;
+      width: 30vw;
+      height: 7vw;
       object-position: 0 95%;
     }
   }
 }
 
 .content {
+  @extend %section_padding;
+
+  margin-top: 2vw;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   & .hero__title {
-    font-size: 53px;
-  }
+    margin-top: 1vw;
+    font-size: 6rem;
 
-  &__block {
-    width: 45%;
+    @media (min-width: 370px) {
+      font-size: 1.3rem;
+    }
 
-    &-info {
-      display: flex;
-      flex-direction: column;
-      gap: 1vw;
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 3rem;
     }
   }
 
-  &__text {
-    font-family: "UbuntuSans";
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    gap: 1vw;
+  &__block {
+    max-width: 50%;
   }
 
   &__button {
@@ -113,24 +149,61 @@
       background-color: var(--color-white);
       color: var(--color-black);
     }
-
-    &-arrow {
-      background-color: var(--color-white);
-      color: var(--color-black);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      transform: rotate(135deg);
-
-      &:hover {
-        background-color: var(--color-orange);
-        color: var(--color-white);
-      }
-    }
   }
 
   &__image {
     width: 35vw;
     height: 20vw;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 1vw;
+
+  &__text {
+    font-family: "UbuntuSans";
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-white);
+    max-width: 80%;
+
+    @media (min-width: 370px) {
+      font-size: 13px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    background-color: var(--color-white);
+    border-radius: 50%;
+    height: 40px;
+
+    &:hover {
+      background-color: var(--color-orange);
+    }
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    transform: rotate(135deg);
+
   }
 }
